@@ -1,0 +1,139 @@
+*{
+	font-size: 25px;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Indie Flower', cursive;
+	font-family: 'Nanum Pen Script', cursive;
+	font-family: 'Shadows Into Light Two', cursive;
+	font-family: 'Do Hyeon', sans-serif;
+	font-family: 'Poor Story', cursive;
+	font-family: 'Gaegu', cursive;
+	font-family: 'Cute Font', cursive;
+}
+/*전체틀*/
+#weup	{	
+	width:100%;	
+	/*웬만해선 아무것도 지정해주지 않는다*/
+}
+
+#header{
+	width:100%;
+	height:100px;
+}
+
+/*입력 영역*/
+#content{	
+	width:100%;
+	height:800px;
+}
+
+#footer{
+	width:100%;
+	height:200px;	
+}
+
+/* 임시 container */
+.container{
+	width:960px;	/* 길이 */
+	margin:0 auto; 
+	background:#1c8adb;
+}
+
+/*로그인 영역*/
+.login-box{
+	width:320px;
+	height:420px;
+	margin:0 auto;
+	background:rgba(0,0,0,0.5);
+	color:#fff;
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%, -50%);
+	box-sizing:border-box;
+	padding: 70px 40px;
+	
+}
+
+#regForm{
+	width:300px;
+	margin:0 auto;
+}
+
+/*로그인 글자*/
+h1{
+	margin:0;
+	padding:0 0 20px;
+	text-align:center;
+	font-size:28px;
+			font-family: 'Open Sans', sans-serif;
+		font-family: 'Indie Flower', cursive;
+		font-family: 'Nanum Pen Script', cursive;
+		font-family: 'Shadows Into Light Two', cursive;
+		font-family: 'Do Hyeon', sans-serif;
+		font-family: 'Poor Story', cursive;
+		font-family: 'Gaegu', cursive;
+		font-family: 'Cute Font', cursive;
+}
+
+/* 블릿기호 초기화 - li태그 앞의 점이나 a태그의 하이퍼링크 밑줄이 생기지 않는다 */
+ul{
+   list-style : none;
+}
+
+/* 아이디, 비밀번호 글자 */
+.login-box p{
+	margin:0;
+	padding:0;
+	font-weight:bold;
+}
+
+.login-box input{
+	width: 100%;
+	margin-bottom:20px;
+}
+
+/* 아이디, 패스워드 입력창 */
+.login-box input[type="text"], input[type="password"]
+{
+	border: none;	/*border : 테두리 설정*/
+	border-bottom: 1px solid #fff;	/* 테두리의 아랫부분만 설정 */
+	background:transparent;	/* 배경 투명하게 */
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 20px;
+}
+
+/*로그인 버튼*/
+.login-box input[type="submit"]
+{
+	border: none;
+	outlind: none;
+	height: 40px;
+	background: #1c8adb;
+	color: #fff;
+	font-size: 23px;
+	border-radius: 20px;	/*테두리 둥글게*/
+}
+.login-box input[type="submit"]:hover	/*hover : 활성화 상태의 스타일 정의*/
+{
+	cursor: pointer;
+	backgroud: #39dc79;
+	color: #000;
+}
+
+/*회원가입 버튼*/
+.login-box a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+}
+.login-box a:hover
+{
+	color: #1c8adb;
+}
+
+
+
+
+

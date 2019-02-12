@@ -1,0 +1,186 @@
+/*
+전체 영역을 통틀어서 스타일 정의
+*/
+@CHARSET "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+   font-family: "Nanum Gothic";
+}
+a {
+   color: #000000;
+   text-decoration: none;   /*밑줄 제거 */
+}
+a {
+   color: #bbbbbb;
+   text-decoration: none;
+   cursor: pointer;   
+}
+#contents{   /* 메인 게시판 */
+   width : 100%;
+   height : 800px;
+   background : white;
+}
+.container{
+   width : 100%;
+   margin : 0 auto;
+   background : white;
+}
+.btn-container {
+	position: relative;
+	bottom: 66px;
+	left: 220px;
+}
+.contents-area{
+   position :relative;
+   top : 100px;
+   width : 960px;
+   margin : 0 auto;
+   background : white;
+}
+.mypet-area{
+   width: 400px;
+   height: 300px;
+   background: white;
+   float: left;
+}
+.petitem-area{
+   width: 400px;
+   height: 300px;
+   background: white;
+   float: right;
+}
+.board-title{
+	font-family: 'Open Sans', sans-serif;
+   font-family: 'Gothic A1', sans-serif;
+   font-family: 'Nanum Gothic Coding', monospace;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-family: 'Gloria Hallelujah', cursive;
+   font-family: 'Nanum Pen Script', cursive;
+   font-family: 'Ubuntu', sans-serif;
+   font-family: 'Sunflower', sans-serif;
+   font-weight: bolder;
+   font-size: 30px;
+}
+.main-title {
+	font-family: 'Open Sans', sans-serif;
+   font-family: 'Gothic A1', sans-serif;
+   font-family: 'Nanum Gothic Coding', monospace;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-family: 'Gloria Hallelujah', cursive;
+   font-family: 'Nanum Pen Script', cursive;
+   font-family: 'Ubuntu', sans-serif;
+   font-family: 'Sunflower', sans-serif;
+   font-size: 23px;
+   font-weight: bolder;
+   list-style: none;
+}
+.content-btn{
+   width:90px;
+   height:30px;
+   margin-bottom:10px;
+   padding-bottom:7px;
+   padding:5px;
+   border:none;
+   border-radius:3px;
+   font-weight:bold;
+   font-size:14px;
+   color:#ffffff;
+   background:#1e90ff;
+   cursor:pointer;
+   box-shadow:2px 2px 2px #555;
+}
+.btn content-btn {
+	width:90px;
+   height:100px;
+   margin-bottom:10px;
+   padding-bottom:7px;
+   padding:5px;
+   border:none;
+   border-radius:3px;
+   font-weight:bold;
+   font-size:14px;
+   color:#ffffff;
+   background:#1e90ff;
+   cursor:pointer;
+   box-shadow:2px 2px 2px #555;
+}
+.contents-area{/* 히든값을 주어야 소속된 div박스들이 겹치지 않고 옆으로 붙는다 */
+   overflow : hidden;
+}
+.navbar-default {   /*배경색상*/
+   background-color: #0063c6;
+}
+.navbar-default .navbar-brand {   /*메뉴바 TogWay 글씨 색*/
+   color: #ffffff; 
+   font-weight: bold;
+   font-family: 'Open Sans', sans-serif;
+font-family: 'Concert One', cursive;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Chela One', cursive;
+font-family: 'Prosto One', cursive;
+font-family: 'Neucha', cursive;
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Fugaz One', cursive;
+font-family: 'Allerta', sans-serif;
+font-family: 'Viga', sans-serif;
+font-family: 'Days One', sans-serif;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {   /* 메뉴바 TogWay 글씨에 마우스 올렸을때 색*/
+   background-color: transparent;
+   color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a,   
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {   /*현재 선택된 메뉴 색*/
+   color: blue;
+   background-color: #000000;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {   /*메뉴 글자에 마우스를 올렸을 때*/
+ 	color: #787878;
+   font-weight:bolder;
+}
+.navbar-default .navbar-nav > .active > a,   
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {   /*드랍다운이 열렸을 때 마우스 색*/
+   color: #B0E0E6;
+   background-color: #B0E0E6;
+   text-decoration: none;
+}
+.navbar-default .navbar-nav > li > a {    /* 메뉴 기본 색상 , 드롭다운까지 색상 설정*/
+    color: #ffffff;
+   font-size: 16px;
+   font-weight:bolder;
+   font-family: 'Open Sans', sans-serif;
+   font-family: 'Gothic A1', sans-serif;
+   font-family: 'Nanum Gothic Coding', monospace;
+   font-family: 'Nanum Gothic', sans-serif;
+   font-family: 'Gloria Hallelujah', cursive;
+   font-family: 'Nanum Pen Script', cursive;
+   font-family: 'Ubuntu', sans-serif;
+   font-family: 'Sunflower', sans-serif;
+}
+@media (max-width: 767px) {   /* 해상도가 작을 때 드랍다운 아이템에 마우스를 올렸을 때 색 */
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: #ffffff;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+      color: #000000;
+   }
+}
+.main-img img{
+   margin-top:55px;
+   height:100px;
+   width:8%;
+   align:center;
+}
+
+.contents-area img{
+   margin-bottom:15px;
+   margin-right:10px;
+   height:35px;
+}

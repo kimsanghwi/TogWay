@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Style -->
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+<body>
+<!-- 기본레이아웃 작성이 필요함  header content footer로 나누어서 작성한다.(본 내용은(content)에 작서 -->
+<!--header 홈페이지의 상단으로회 스크롤을 내려도 고정되도록 한다(로그아웃, 회원정보, 다른컨텐츠로 이동 등 버튼 구성   -->
+<!--<div> 실제 표현하고자 하는 것을 구현하기전에 container공간을 부여해 주어야 한다   -->
+
+
+
+
+
+	<div id="wrap"> <!-- 전체적화면을 wrap(div)로 감싼다. -->
+		<div id="header"><!-- (#999)연한 회색 값은 해더부분  -->
+			<div class="container">
+				<div calss="header-contents">
+				Header-contents<br>
+				Header-contents1<br>
+				div공간에서 내용을 입력해서 height를 늘릴 수 있음??
+				container의 height 값이 0 auto임으으로 container내의 내용(공간)이 커지면 자동 증가
+				</div>
+			</div>
+		</div>
+		
+		<div id="contents">
+		<!-- 컨텐츠에 height값을 고정 시킨 것은 안에 container가 소속되있어서 화면에서는 contents공간만 보이지만
+		스크롤를 내리면서 내용들을 확인 할 수 있음 -->
+			<div class="container">
+				<div class="contents-area">
+					<div class="left-col"><!-- 컨텐츠 1 접속버튼 -->
+						<a href="header.jsp">
+							<img class="main-img" src="img/md.jpg">
+						</a>
+					</div>
+					
+					<div class="center-col"><!-- 컨텐츠 2 접속버튼 -->
+						<a href="header.jsp">
+							<img class="main-img" src="img/md.jpg">
+						</a>
+					</div>
+					
+					<div class="right-col"><!-- 컨텐츠 3 접속버튼 -->
+						<a href="header.jsp">
+							<img class="main-img" src="img/md.jpg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="footer">
+			<div class="container">
+				Footer
+			</div>
+		</div>
+	</div>
+</body>
+</html>
